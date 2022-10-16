@@ -4,11 +4,11 @@
 int main()
 {
     int ar1[10], ars;
-    printf("Enter Size of array");
+    printf("Enter Size of array : ");
     scanf("%d", &ars);
     for (int p = 0; p < ars; p++)
     {
-        printf("Enter %d value ", ++p);
+        printf("Enter %d value ", p + 1);
         scanf("%d", &ar1[p]);
     }
 
