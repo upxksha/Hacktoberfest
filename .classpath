@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="JSP/temp_1/src/java/|login_register/my2ndproject/src/java/|java_2022/project2/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="java_2022/project2/src"/>
+	<classpathentry kind="src" path="JSP/temp_1/src/java"/>
+	<classpathentry kind="src" path="login_register/my2ndproject/src/java"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
