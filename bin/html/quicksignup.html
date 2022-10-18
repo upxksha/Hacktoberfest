@@ -1,0 +1,53 @@
+#quick Signup form
+<html>
+<head>
+</head>
+<body>
+ <?php 
+    
+
+//php part
+    $a=$_REQUEST["inp"];
+    echo "Username : $a";
+    
+    $r=$_REQUEST["t"];
+    echo "Password : $r";
+    $q=$_REQUEST["u"];
+    echo "Gender : $q";
+    
+    $e=$_REQUEST["sel"];
+    echo "Country : $e";
+    
+    $b=$_REQUEST["a"];
+    echo "Education : $b";
+   
+    ?>
+	//creating the form
+    <center><form name="g" method="post" action="http://localhost/signup.php">   
+        username: <input type="text" name="inp" placeholder="Insert Name"><br> 
+         
+            password: <input type="password" name="t" placeholder="password eka ghpn"><br>
+         
+            gender : <input type="radio" name="u" placeholder="female">F 
+                     <input type="radio" name="u" placeholder="male"> M <br>
+          
+                     Country :
+            <select name="sel">
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="USA">USA</option>>
+                <option value="Australia">Australia</option>
+            
+                </select>
+                    <br>
+           
+           
+             Education : 
+             <input type="checkbox" name="a" placeholder="olevel">OL
+             <input type="checkbox" name="a2" placeholder="alevel"> AL
+             <br>
+                     
+        <input type="submit" name="sub" value="submit">    
+        <input type="reset" name="sub" value="clear">    
+    </form> </center>
+</body>
+</html> 
