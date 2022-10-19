@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script lang="JavaScript" type="text/javascript">
+        function ConfLogout() {
+            let text = "You will be logged out as a result of this Action.\nContinue the Action?";
+            if (confirm(text) == true)
+            {
+                return true;
+            }
+        }
+    </script>
+
+</head>
+<body style="background-color:#000000; ">
+<nav>
+    <div class="navpanel">
+        <div class="logo"><a href="home.php"><img src="Logo.png"> </a></div>
+        <input type="radio" name="responsive_slide" id="menu-btn">
+        <input type="radio" name="responsive_slide" id="close-btn">
+        <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search &nbsp<i class="fa fa-search"></i> </a></li>
+
+            <li>
+                <a href="#" class="clubs_and_societies_navigation">Clubs & Societies &nbsp;<i class="fa fa-caret-down"></i></a>
+                <input type="checkbox" id="show-clubMenu">
+                <label for="show-clubMenu" class="clubs">Clubs & Societies &nbsp;<i class="fa fa-caret-down"></i></label>
+                <div class="clubs_dropbox">
+                    <div class="content">
+                        <div class="row" id="fh">
+                            <img src="Logo.png" alt="">
+                        </div>
+                        <div class="row">
+                            <header>Sports Clubs</header>
+                            <ul class="clubs_dropbox-links">
+                                <li><a href="#">Athletics Club</a></li>
+                                <li><a href="#">Badminton Club</a></li>
+                                <li><a href="#">Cricket Club</a></li>
+                                <li><a href="#">Basketball Club</a></li>
+                                <li><a href="#">Rugby Club</a></li>
+                                <li><a href="#">Swimming Club</a></li>
+                                <li><a href="#">Table Tennis Club</a></li>
+                                <li><a href="#">Netball Club</a></li>
+                                <li><a href="#">Martial Arts Club</a></li>
+                                <li><a href="#">Hockey Club</a></li>
+                
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <header>Activity / Religious Clubs</header>
+                            <ul class="clubs_dropbox-links">
+                                <li><a href="#">Media Club</a></li>
+                                <li><a href="#">Music Club</a></li>
+                                <li><a href="#">Drama Club</a></li>
+                                <li><a href="#">Dancing Club</a></li>
+                                <li><a href="#">Literature Club</a></li>
+                                <li><a href="#">Graphics & Painting Club</a></li>
+                                <li><a href="#">Explorer's Club</a></li>
+                                <li><a href="#">Green Task Force</a></li>
+                                <li><a href="#">Nature & Wildlife Club</a></li>
+                                <li><a href="#">Oratory & Debating Club</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <header>Academic / International Clubs</header>
+                            <ul class="clubs_dropbox-links">
+                                <li><a href="#">FOSS Community</a></li>
+                                <li><a href="#">IEEE Student Branch</a></li>
+                                <li><a href="#">Innovator's Club</a></li>
+                                <li><a href="#">Rotaract Club</a></li>
+                                <li><a href="#">Leo Club</a></li>
+                                <li><a href="#">AIESEC</a></li>
+                                <li><a href="#">Toastmaster Club</a></li>
+                                <li><a href="#">UN Student Forum</a></li>
+                                <li><a href="#">Gavel Club</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li>
+                <a href="#" class="clubs_and_societies_navigation">My Profile &nbsp;<i class="fa fa-caret-down"></i></a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="clubs">My Profile &nbsp;<i class="fa fa-caret-down"></i></label>
+                <ul class="my_profile-dropbox">
+                    <li><a href="#">View</a></li>
+                    <li><a onclick="return ConfLogout()==true" href="#">Log Out</a></li>
+                </ul>
+            </li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+</nav>
