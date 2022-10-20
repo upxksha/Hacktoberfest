@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "948078441340",
+    "firebase_url": "https://login-and-register-form-73173-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "login-and-register-form-73173",
+    "storage_bucket": "login-and-register-form-73173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948078441340:android:8d1ff46dbc9269af42eaf9",
+        "android_client_info": {
+          "package_name": "com.example.tast02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948078441340-4n4m46nafkpude0jjg6m1r6pqjn37kdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tast02",
+            "certificate_hash": "41d81422702e9253c2e6f4a83690aae1af9ba30c"
+          }
+        },
+        {
+          "client_id": "948078441340-mbgl3nthle7ko7m1riskiebqmlbhamnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0PfPX026yQ77uLjspf2smraSea5jWT48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948078441340-mbgl3nthle7ko7m1riskiebqmlbhamnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Task02</string>
+    <string name="activity01">Login and Register a User</string>
+    <string name="activity02">Login a Member</string>
+    <string name="activity03">Create an Account</string>
+    <string name="go_activity02">Login</string>
+    <string name="go_activity03">Register</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="profile">User Profile</string>
+    <string name="log_out">Log Out</string>
+
+    <string name="upload">Upload</string>
+    <string name="todo">TODO</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="requests">Requests</string>
+    <string name="jobs">Your Jobs</string>
+    <string name="settings">Settings</string>
+
+</resources>
