@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background: url("pratiksha-mohanty-V0xp-dTS3z0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #09090c;
+
+}
+nav .navpanel{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 100px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navpanel .logo img{
+    width: 200px;
+    height: 98px;
+
+}
+.navpanel .nav-links{
+    display: inline-flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.nav-links li a:hover{
+    background: #a60000;
+    font-weight: bold;
+
+
+}
+.nav-links .clubs{
+    display: none;
+}
+.nav-links .my_profile-dropbox{
+    position: absolute;
+    background: #09090c;
+    width: 145px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+/*drop down boxes*/
+.nav-links li:hover .clubs_dropbox,
+.nav-links li:hover .my_profile-dropbox{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    padding-left: 0px;
+}
+.my_profile-dropbox li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 40px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.clubs_dropbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+
+}
+.clubs_dropbox .content{
+    background: #242526;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.clubs_dropbox .content .row{
+    width: 100%;
+    line-height: 45px;
+}
+.content .row img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    padding-right: 80px;
+}
+.content .row header{
+    color: #f2f2f2;
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    color: #a60000;
+}
+.content .row .clubs_dropbox-links{
+    margin-left: -40px;
+    border-left: 1px solid white;
+}
+.row .clubs_dropbox-links li{
+    padding: 0 20px;
+}
+.row .clubs_dropbox-links li a{
+    padding: 0px 0px 0px 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+
+}
+.row .clubs_dropbox-links li a:hover{
+    color: #f2f2f2;
+}
+.navpanel .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.navpanel .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+h1{
+    color:ivory;
+    font-size:100px;
+    text-align: center;
+}
+.butn{
+    text-align: center;
+    background: #fb2525;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    height: 80px;
+    width:400px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding-top:40px;
+}

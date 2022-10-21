@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="py.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script lang="javascript" type="text/javascript" src="paypg.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div id="topleft">
+        <a href="../home.php"><button id="icon_btn"><i class="fa fa-arrow-circle-left" id="icon"></i></button></a>
+    </div>
+    <form action="payaction.php" method="post" name="payform" onsubmit="return validtext()">
+        <table class="formtable" border="0">
+            <tr>
+                <td><h2 class="title">Herb details</h2></td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td><input type="text" name="item" placeholder="Herb" required ></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="uname" placeholder="John Doe" required></td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td><input type="text" name="amount" placeholder="2 KG" required></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="number" name="price" placeholder="Rs 2000"required></td>
+            </tr>
+            <tr>
+                <td><h2 class="title">Billing address</h2></td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fname" placeholder="John Doe" required></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" name="mail" placeholder="JohnDoe@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="add" placeholder="Number - Street - Locality" required></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city" placeholder="Colombo" required></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="country" placeholder="Sri Lanka" required></td>
+            </tr>
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="text" name="zip" placeholder="123-456" required></td>
+            </tr>
+        </table>
+            <table class="formtable t2" id="t2_tbl" border="0">
+                <tr>
+                    <td id="nextbtn_colomn">
+
+                        <input type="reset" name="clear" value="Clear">
+                    </td>
+                    <td id="clearbtn_colomn">
+                        <input type="submit" name="nextstep_submit" value="Continue">
+                    </td>
+                </tr>
+            </table>
+
+    </form>
+</div>
+
+</body>
+</html>
