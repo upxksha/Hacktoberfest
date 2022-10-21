@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+header{
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 a{
+    margin-left: 12px;
+    color: #560bad;
+}
+
+header a{
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 12px;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: #560bad;
+    transition: 0.4s;
+    font-weight: 500;
+}
+
+.intro span{
+    color: #560bad;
+}
+
+main{
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.bg-img{
+    width: 60%;
+    height: 80vh;
+}
+
+.bg-img img{
+    width: 60%;
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+}
+
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+.intro h2{
+    font-size: 36px;
+    animation-name: example;
+    animation-duration: 2s;
+    transition: 0.2s;
+}
+
+.intro p{
+    font-size: 18px;
+}
+
+.services-btn a{
+    text-decoration: none;
+    color: #560bad;
+    font-weight: 600;
+}
+
+.contact-btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.contact-btn{
+    padding: 4px 14px;
+    background-color: #560bad;
+    border: #560bad 2px solid;
+    border-radius: 6px;
+}
+
+.services-btn{
+    padding: 4px 14px;
+    background-color: transparent;
+    border: #560bad 2px solid;
+    border-radius: 6px;
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    background-color: #560bad;
+    color: white;
+    text-align: left;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.title{
+    color: #560bad;
+    padding: 12px;
+}
+
+.services{
+    display: flex;
+}
+
+.service{
+    margin: 10px;
+}
+
+.service img{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services h3{
+    position: absolute;
+}
+
+.projects{
+    position: relative;
+    display: flex;
+}
+
+.project{
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.projects img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.about{
+    border: 2px solid #560bad;
+    background-color: #560bad;
+    border-radius: 8px;
+    display: flex;
+}
+
+.about img{
+    width: 30%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.content p{
+    padding: 8px;
+    color: white;
+    text-align: left;
+}
+
+.contact{
+    display: flex;
+}
+
+.contact img{
+    width: 30%;
+    height: auto;
+}
+
+.form{
+    width: 60%;
+}
+
+.form form{
+    margin-left: 20%;
+}
+
+.contact input{
+    outline-color: #560bad;
+    padding: 4px 12px;
+}
+
+textarea{
+    resize: none;
+    outline-color: #560bad;
+    padding: 4px 12px;
+}
+
+.submit-btn{
+    background-color: #560bad;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.name{
+    display: flex;
+}
+
+.lName{
+    margin-left: 12px;
+}
+
+.social i{
+    display: block;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.social i:hover{
+    color: #560bad;
+    transition: 0.4s;
+}
+
+footer{
+    padding: 12px;
+    background-color: #560bad;
+}
+
+.footerContent{
+    color: white;
+}
+
+.logo .fa-bars{
+    display: none;
+}
+
+@keyframes example{
+    0%   {opacity: 0.3;}
+    50%  {opacity: 0.8;}
+    100% {opacity: 1;}
+  }
+
+ @media screen and (max-width:480px){
+    
+    *{
+        scroll-behavior: smooth;
+    }
+
+    header{
+        overflow: hidden;
+        background-color: #560bad;
+        display: block;
+        padding: 8px;
+    }
+
+    .navLinks{
+        display: none;
+    } 
+
+    header h2 a{
+        color: white;
+    }
+
+    .cards{
+        display: block;
+        position: relative;
+        margin-top: 75%;
+    }
+
+    .bg-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .bg-img img{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .intro{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1000;
+        margin-left: 40%;
+    }
+
+    .intro h2{
+        font-size: 27px;
+    }
+
+    .services{
+        display: block;
+    }
+
+    .logo{
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .fa-bars{
+        position: fixed;
+        color: white;
+        display: inline;
+        margin-left: 80%;
+    }
+
+    .active{ 
+        display: block;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    .projects{
+        display: block;
+    }
+
+    .about{
+        display: block;
+    }
+
+    .about img{
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact{
+        display: block;
+    }
+
+    .contact img{
+        width: 100%;
+        height: auto;
+    }
+
+    .social i{
+        display: inline;
+    }
+
+    .name{
+        display: block;
+    }
+
+    textarea{
+        width: 100%;
+        height: auto;
+    }
+
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer{
+        margin: 0;
+        padding: 8px;
+    }
+    
+    footer span {
+        text-align: center;
+    }
+ 
+ } 
+
+
+
+
+
+
+
+
+
