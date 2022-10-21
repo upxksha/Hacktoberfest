@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/56016c02ef.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Infotronix</title>
+</head>
+<body>
+    <header id="myHeader">
+        <div class="logo">
+            <h2><a href="#"><i class="fab fa-connectdevelop"></i>Infotronix</a></h2>
+            <i class="fas fa-bars"></i>
+        </div>
+       <div class="navLinks">
+        <nav>
+            <ul class="active">
+                <li><a href="#landing" >Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+       </div>
+    </header>
+    <main>
+    <div class="landing" id="landing">
+        <div class="intro">
+            <h2>
+                We can make <br> your <span>thought</span> into <span>reality</span>
+            </h2>
+            <p>Design & develop your software <br> using latest technologies with fully functionality</p>
+            <br>
+            <button class="services-btn"><a href="">Services</a></button>
+            <button class="contact-btn"><a href="">Contact Us</a></button>
+        </div>
+        <div class="bg-img">
+            <img src="background.jpg" alt="">
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore ab aspernatur esse facilis ipsam. Tenetur rerum consectetur ex eligendi.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore ab aspernatur esse facilis ipsam. Tenetur rerum consectetur ex eligendi.
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, labore ab aspernatur esse facilis ipsam. Tenetur rerum consectetur ex eligendi.
+        </div>
+    </div>
+    <h2 class="title" id="services">Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="services.jpg" alt="">
+                <!-- <h3>Services</h3> -->
+        </div>
+        <div class="service">
+            <img src="services.jpg" alt="">
+        </div>
+        <div class="service">
+            <img src="services.jpg" alt="">
+        </div>
+    </div>
+    <h2 class="title" id="projects">Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="project.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur alias voluptates corporis ea debitis odit ipsa nisi. Cumque, dicta iste.</p>
+        </div>
+        <div class="project">
+            <img src="project.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur alias voluptates corporis ea debitis odit ipsa nisi. Cumque, dicta iste.</p>
+        </div>
+        <div class="project">
+            <img src="project.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur alias voluptates corporis ea debitis odit ipsa nisi. Cumque, dicta iste.</p>
+        </div>
+    </div>
+    <h2 class="title" id="about">About Us</h2>
+    <div class="about">
+        <img src="about.jpg" alt="">
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sit blanditiis dolorum odio eos corrupti, esse consectetur, repellat minima incidunt quia rerum optio nostrum laudantium similique. Consectetur incidunt sapiente quod!</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, voluptatibus? Praesentium officia eligendi perferendis, veniam, illum explicabo iusto error, neque numquam eos deserunt facere quam.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque explicabo non nulla, excepturi animi quas nesciunt illum maiores amet quos harum laborum vitae ad nam deleniti nostrum tempore quis autem sit debitis veniam nemo laboriosam. Dolore fugiat, laudantium, blanditiis quisquam qui itaque iusto at hic nihil distinctio laboriosam exercitationem cum.</p>
+        </div>
+    </div>
+    <h2 class="title" id="contact">Contact Us</h2>
+    <div class="contact">
+        <img src="contact.jpg" alt="">
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-pinterest"></i>
+        </div>
+        <div class="form">
+            <form action="" name="contactForm">
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="fName" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="lName" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="description" placeholder="Description" cols="45" rows="10"></textarea></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="submit" value="Submit" class="submit-btn" onclick="validate()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <span><i class="fab fa-connectdevelop"></i>Infotronix</span>
+            <p>Created By - Dushan Senadheera</p>
+        </div>
+    </footer>
+    <script>
+        const toggleButton = document.getElementsByClassName('fas fa-bars')[0]
+        const navBarLinks = document.getElementsByClassName('navLinks')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navBarLinks.classList.toggle('active')
+        })
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
