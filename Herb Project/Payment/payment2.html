@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="py2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script lang="javascript" type="text/javascript" src="paypg2.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="blocks" id="topleft">
+        <a href="payment.html"><button id="icon_btn"></button></a>
+    </div>
+    <form action="payaction2.php" method="post" name="payform" onsubmit="return validtext()">
+        <table class="formtable" border="0">
+            <tr>
+                <td><h2 class="title">Payment</h2></td>
+            </tr>
+            <tr class="trp">
+                <td>Cards Accepted</td>
+                <td><img src="card_img.png"></td>
+            </tr>
+            <tr>
+                <td>Name On Card</td>
+                <td><input type="text" name="noc" placeholder="John Doe" required></td>
+            </tr>
+            <tr>
+                <td>Card Number</td>
+                <td><input type="number" name="cnum" placeholder="1111-2222-3333-4444" required></td>
+            </tr>
+            <tr>
+                <td>Exp Month</td>
+                <td><input type="text" name="exmon" placeholder="January" required></td>
+            </tr>
+            <tr>
+                <td>Exp Year</td>
+                <td><input type="number" name="exyer" placeholder="2023" required></td>
+            </tr>
+            <tr>
+                <td>CVV</td>
+                <td><input type="text" name="cvv" placeholder="123" required></td>
+            </tr>
+        </table>
+        <table class="formtable t2" id="t2_tbl" border="0">
+            <tr>
+                <td id="nextbtn_colomn">
+
+                    <input type="reset" name="clear" value="Clear">
+                </td>
+                <td id="clearbtn_colomn">
+                    <input type="submit" name="nextstep_submit" value="Pay">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+
+
+</body>
+</html>

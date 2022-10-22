@@ -1,0 +1,165 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Administrator profile */
+
+.sidenav {
+    height: 100%;
+    width: 26%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+}
+.sidenav img
+{
+    width: 200px;
+    border-radius: 50%;
+
+
+}
+.sidenav h1
+{
+    color: white;
+    font-weight: bold;
+}
+
+.sidenav a {
+
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    font-weight: bold;
+
+
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+#div-btn-back
+{
+    text-align: left;
+    padding-left: 20px;
+
+
+}
+#back-btn
+{
+    background-color: transparent;
+    border-color: transparent;
+
+}
+
+#icon
+{
+    color: white;
+    font-size: 35px;
+}
+#btnlo
+{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: 5px 10px 5px 10px;
+
+}
+#btnlo a
+{
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+}
+#btnlo:hover
+{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid grey;
+    padding: 5px 10px 5px 10px;
+    color: black;
+
+}
+#btnlo a:hover
+{
+    color: black;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.content-admin
+{
+    height: 100%;
+    width: 74%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:#6c757d;
+    overflow: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+#delete
+{
+    text-decoration: none;
+    color: #ff0000;
+}
+#edit
+{
+    text-decoration: none;
+    color: yellow;
+}
+#delete:hover,#edit:hover
+{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+.conf_delete,.conf_edit
+{
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Search box */
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: grey;
+}
+
+@media only screen and (max-width: 1345px) {
+    .sidenav
+    {
+        width: 26%;
+
+    }
+    .sidenav h1
+    {
+        font-size: 28px;
+    }
+
+    .content-admin
+    {
+        width: 74%;
+    }
+
+}

@@ -1,0 +1,89 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(pratiksha-mohanty-V0xp-dTS3z0-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.formtable{
+    padding-left:80px;
+}
+#t2_tbl
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    border-spacing: 30px 10px;
+}
+.container
+{
+    width: 600px;
+    height: 700px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    background: #000000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 10%;
+
+}
+.container img
+{
+    width: 250px;
+    top: -50px;
+    left: calc(50% - 50px);
+
+
+
+}
+
+.container input[type="text"], input[type="password"], input[type="number"], input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fb2525;
+    outline: none;
+    height: 35px;
+    font-size: 16px;
+}
+.t2
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container input[type="submit"],[type="reset"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.container input[type="submit"]:hover ,[type="reset"]:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+#topleft
+{
+    vertical-align: top;
+    text-align: left;
+}
+#icon_btn
+{
+    background-color: transparent;
+    border-color: transparent;
+}
