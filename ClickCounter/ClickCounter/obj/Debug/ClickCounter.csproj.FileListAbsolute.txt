@@ -1,0 +1,11 @@
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\bin\Debug\ClickCounter.exe.config
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\bin\Debug\ClickCounter.exe
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\bin\Debug\ClickCounter.pdb
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.csproj.SuggestedBindingRedirects.cache
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.Form1.resources
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.Properties.Resources.resources
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.csproj.GenerateResource.cache
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.csproj.CoreCompileInputs.cache
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.exe
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.pdb
+D:\Coding\NSBM\Year 01\Semester 02\C#\ClickCounter\ClickCounter\obj\Debug\ClickCounter.csproj.AssemblyReference.cache

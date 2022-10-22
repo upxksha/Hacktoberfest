@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "01e03306-cef5-432e-b147-4db3a9378faf": {
+      "ProjectGuid": "01e03306-cef5-432e-b147-4db3a9378faf",
+      "DisplayName": "ClickCounter",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
