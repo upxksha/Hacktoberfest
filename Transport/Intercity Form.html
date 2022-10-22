@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Intercity Form | BUS</title>
+        <link rel="stylesheet" href="IntercityStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <script defer src="script.js"></script>
+        <style>
+            
+            .custom-select {
+              position: relative;
+              font-family: Arial;
+            }
+            
+            .custom-select select {
+              display: none; 
+            }
+            
+            .select-selected {
+              background-color: green;
+            }
+            
+           
+            .select-selected:after {
+              position: absolute;
+              content: "";
+              top: 14px;
+              right: 10px;
+              width: 0;
+              height: 0;
+              border: 6px solid transparent;
+              border-color: #fff transparent transparent transparent;
+            }
+            
+            
+            .select-selected.select-arrow-active:after {
+              border-color: transparent transparent #fff transparent;
+              top: 7px;
+            }
+            
+            
+            .select-items div,.select-selected {
+              color: #ffffff;
+              padding: 8px 16px;
+              border: 1px solid transparent;
+              border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+              cursor: pointer;
+              user-select: none;
+            }
+            
+           
+            .select-items {
+              position: absolute;
+              background-color: green;
+              top: 100%;
+              left: 0;
+              right: 0;
+              z-index: 99;
+            }
+            
+       
+            .select-hide {
+              display: none;
+            }
+            
+            .select-items div:hover, .same-as-selected {
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+            </style>
+
+<script> 
+  function validateEmail(emailId)
+  {
+  var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  if(emailId.value.match(mailformat))
+  {
+alert("Thank you for booking. You will recieve an email.");
+  document.form1.text1.focus();
+  return true;
+  }
+  else
+  {
+  alert("Please fill all the information.");
+  document.form1.text1.focus();
+  return false;
+  }
+  }    
+
+  
+  </script> 
+
+
+    </head>
+    <body>
+       
+        <div class="container">
+            <div class="title">Intercity Booking</div><br>
+            <form name="form1" action="Intercityinsert.php" method="POST" id="myform">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Student Name</span>
+                        <input type="text" name="Sname" placeholder="Enter your Name" required>
+                    </div>
+                   
+                    <div class="input-box">
+                        <span class="details">Student ID</span>
+                        <input type="text" name="SId" placeholder="Enter your student ID" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">E-mail</span>
+                        <input type='text' name='email' placeholder="Enter your E-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type='tel' name='phone1' id="myform_phone" placeholder="Enter your phone number" pattern="^\d{10}$" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Guardian Phone Number</span>
+                        <input type="tel" name='phone' id="myform1_phone" placeholder="Enter your phone number" pattern="^\d{10}$" required>
+                    </div>
+                    
+
+                    
+                </div>
+                <div class="booking-details">
+                    <input type="radio" name="booking" id="dot-1" value="a" required>
+                    <input type="radio" name="booking" id="dot-2" value="b" required>
+                    <input type="radio" name="booking" id="dot-3" value="c" required>
+                    <span class="booking-title">Book for:</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="booking">Daily</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="booking">Weekly</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="booking">Monthly</span>
+                        </label>
+                    </div>
+                </div><br>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="custom-select" style="width:250px;">
+                                
+                                <select name="select1" required>
+                                  <option value="0">Select your Starting point</option>
+                                  <option value="1">NSBM</option>
+                                  <option value="2">Kaluthara</option>
+                                  <option value="3">Kalaniya</option>
+                                  <option value="4">Nugegoda</option>
+                                  <option value="5">Moratuwa</option>
+                                  <option value="6">Awissawella</option>
+                                  <option value="7">Kadawatha</option>
+                                  <option value="8">Battaramulla</option>
+                                  
+                                </select>
+                              </div>
+                              </td>
+<br>
+                              <td>
+                                <div class="custom-select" style="width:250px;">
+                                    
+                                    <select name="select2" required>
+                                      <option value="0">Select your Ending point</option>
+                                      <option value="1">NSBM</option>
+                                      <option value="2">Kaluthara</option>
+                                      <option value="3">Kalaniya</option>
+                                      <option value="4">Nugegoda</option>
+                                      <option value="5">Moratuwa</option>
+                                      <option value="6">Awissawella</option>
+                                      <option value="7">Kadawatha</option>
+                                      <option value="8">Battaramulla</option>
+                                      
+                                    </select>
+                                  </div>
+                                  </td>
+
+                              </tr>
+
+                              
+                    </table>
+ <br>
+
+   Select time: 
+     
+<div class="custom-select" style="width:250px;">
+                                    
+                                    <select name="select3" required>
+                                      <option value="0">Select Time</option>
+                                      <option value="1">11.00 a.m.</option>
+                                      <option value="2">3.00 p.m.</option>
+                                      <option value="3">5.00 p.m.</option>
+                                     
+                                      
+                                    </select>
+                                  </div>           
+                    
+                    
+                              <script>
+                                var x, i, j, l, ll, selElmnt, a, b, c;
+                               
+                                x = document.getElementsByClassName("custom-select");
+                                l = x.length;
+                                for (i = 0; i < l; i++) {
+                                  selElmnt = x[i].getElementsByTagName("select")[0];
+                                  ll = selElmnt.length;
+   
+                                  a = document.createElement("DIV");
+                                  a.setAttribute("class", "select-selected");
+                                  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                                  x[i].appendChild(a);
+                                  
+                                  b = document.createElement("DIV");
+                                  b.setAttribute("class", "select-items select-hide");
+                                  for (j = 1; j < ll; j++) {
+                                    
+                                    c = document.createElement("DIV");
+                                    c.innerHTML = selElmnt.options[j].innerHTML;
+                                    c.addEventListener("click", function(e) {
+                                        
+                                        var y, i, k, s, h, sl, yl;
+                                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                        sl = s.length;
+                                        h = this.parentNode.previousSibling;
+                                        for (i = 0; i < sl; i++) {
+                                          if (s.options[i].innerHTML == this.innerHTML) {
+                                            s.selectedIndex = i;
+                                            h.innerHTML = this.innerHTML;
+                                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                                            yl = y.length;
+                                            for (k = 0; k < yl; k++) {
+                                              y[k].removeAttribute("class");
+                                            }
+                                            this.setAttribute("class", "same-as-selected");
+                                            break;
+                                          }
+                                        }
+                                        h.click();
+                                    });
+                                    b.appendChild(c);
+                                  }
+                                  x[i].appendChild(b);
+                                  a.addEventListener("click", function(e) {
+                                      
+                                      e.stopPropagation();
+                                      closeAllSelect(this);
+                                      this.nextSibling.classList.toggle("select-hide");
+                                      this.classList.toggle("select-arrow-active");
+                                    });
+                                }
+                                function closeAllSelect(elmnt) {
+                                  
+                                  var x, y, i, xl, yl, arrNo = [];
+                                  x = document.getElementsByClassName("select-items");
+                                  y = document.getElementsByClassName("select-selected");
+                                  xl = x.length;
+                                  yl = y.length;
+                                  for (i = 0; i < yl; i++) {
+                                    if (elmnt == y[i]) {
+                                      arrNo.push(i)
+                                    } else {
+                                      y[i].classList.remove("select-arrow-active");
+                                    }
+                                  }
+                                  for (i = 0; i < xl; i++) {
+                                    if (arrNo.indexOf(i)) {
+                                      x[i].classList.add("select-hide");
+                                    }
+                                  }
+                                }
+                                
+                                document.addEventListener("click", closeAllSelect);
+                                </script>
+<br><br>
+       <div class="booking-details">
+                    <input type="radio" name="booking1" id="dot-11" value="d" required>
+                    <input type="radio" name="booking1" id="dot-21" value="e" required>
+                    <span class="booking-title">Book for:</span>
+                    <div class="category">
+                        <label for="dot-11">
+                            <span class="dot one1"></span>
+                            <span class="booking1">One Way transport</span>
+                        </label>
+                        <label for="dot-21">
+                            <span class="dot two1"></span>
+                            <span class="booking1">Both Way transport</span>
+                        </label></div></div>
+               
+
+                
+                <div class="button">
+                    <input type="submit"  name="submit" value="Book" onclick="validateEmail(document.form1.email)"/>
+                    
+                </div>
+
+                <div class="button">
+                    <input type ="reset" value="Cancel">
+                    
+                </div>
+<br>
+<br>
+                <hr size="10" width=100% color="#GG9865"><br><center>
+                  <h2><u>Transport Schedule Morning and Evening:</u><h2>
+                  <img src="timetableIn.jfif" height=400 width=700></center>
+                  <hr size="10" width=100% color="#GG9865"><br>
+                  <br><h1 align=left><u>Driver's Details</u></h1>
+                  <br><li align=left>Contact drivers for further details from following informations.</li><br>
+                  <table>
+                    <tr>
+                      <td>
+                  <img src="login.jpg"height=100 width=100></td>
+                  <td>Name:S.A.Perera<br>Age:45<br>Vehicle number:LA-1234<br>Contact No.:075****<br>Location:Kaluthara</td>
+                  <td>
+                  <img src="login.jpg"height=100 width=100></td>
+                  <td>Name:M.Ranasinghe<br>Age:48<br>Vehicle number:SE-2324<br>Contact No.:076*** <br>Location:Kalaniya</td>
+                  <td>
+                  <img src="login.jpg" height=100 width=100></td>
+                  <td>Name:S.A.De silva<br>Age:61<br>Vehicle number:AA-4564<br>Contact No.:078***<br>Location:Nugegoda</td>
+                </tr>
+                <tr>
+                  <td>
+                  <img src="login.jpg" height=100 width=100></td>
+                  <td>Name:K.P.Weeerasinghe<br>Age:43<br>Vehicle number:KM-7897<br>Contact No.:077***<br>Location:Moratuwa</td>
+                  <td>
+                  <img src="login.jpg" height=100 width=100></td>
+                  <td>Name:M.K.Ranawaka<br>Age:55<br>Vehicle number:JL-0787<br>Contact No.:075****<br>Location:Awissawella</td>
+                  <td>
+                  <img src="login.jpg" height=100 width=100></td>
+                  <td>Name:U.S.Ariyesena<br>Age:52<br>Vehicle number:CE-5689<br>Contact No.:071****<br>Location:Kadawatha</td>
+                 
+                 </tr>
+                  <td>
+                  
+
+
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
+
+      
+  
