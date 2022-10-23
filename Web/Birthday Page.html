@@ -1,0 +1,73 @@
+<html>
+<head>
+
+  <title>Birthday Wishes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #57db0a;
+    color: #6e7562;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="Images/B1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Images/B2.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Images/B3.jpg" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Images/B4.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<hr style="height:180px;border-width:0">
+
+<footer>
+  <h3>Do you want to share your QUOTE with us?</h3>
+  <button class="button" type="button" id="btn" onclick="nextpage()">Click here</button>
+
+  <script>
+  function nextpage(){
+    window.location="Form.html";
+    window.location.href="Form.html";
+  }
+  </script>
+
+</footer>
+</body>
+</html>
