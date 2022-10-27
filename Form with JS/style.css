@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  background-color: greenyellow;
+  transition: background 0.5s ease;
+  position: relative;
+  /* justify-content: center;
+  align-items: center; */
+}
+.field-name,
+.feild-password,
+.field-email,
+.field-finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.field-name i,
+.feild-password i,
+.field-email i,
+.field-finish i {
+  padding: 10px;
+  cursor: pointer;
+}
+.feild-password input,
+.field-email input,
+.field-name input {
+  background: none;
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+}
+
+div.innactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
+}
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  /* 50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  } */
+  75% {
+    transform: translate(-50%, -50%) rotate(-10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
