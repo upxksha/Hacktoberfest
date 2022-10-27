@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- slider -->
+    <div class="slider">
+        <!-- redio controls -->
+        <input type="radio" name="sld" id="sld1">
+        <input type="radio" name="sld" id="sld2">
+        <input type="radio" name="sld" id="sld3">
+        <input type="radio" name="sld" id="sld4">
+        <input type="radio" name="sld" id="sld5">
+
+        <!-- slides -->
+        <div class="slides">
+            <!-- slide 1 -->
+            <div class="slide curr">
+                <img src="images/basketball.jpg" alt="">
+                <div class="desc">
+                    <h2>Basketball</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="slide">
+                <img src="images/cricket.jpg" alt="">
+                <div class="desc">
+                    <h2>Cricket</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="slide">
+                <img src="images/football.jpg" alt="">
+                <div class="desc">
+                    <h2>Football</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="slide">
+                <img src="images/volleyball.jpg" alt="">
+                <div class="desc">
+                    <h2>Volleyball</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+            <!-- slide 5 -->
+            <div class="slide">
+                <img src="images/rugby.jpg" alt="">
+                <div class="desc">
+                    <h2>Rugby</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+        </div>
+        <!-- arow navigation -->
+        <a href="#" class="arrow left"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="#" class="arrow right"><i class="fas fa-chevron-circle-right"></i></a>
+        <!-- radio navigation -->
+        <div class="rad-nav">
+            <label for="sld1" class="rad-btn active"></label>
+            <label for="sld2" class="rad-btn"></label>
+            <label for="sld3" class="rad-btn"></label>
+            <label for="sld4" class="rad-btn"></label>
+            <label for="sld5" class="rad-btn"></label>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
